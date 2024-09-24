@@ -20,7 +20,16 @@ document.getElementById('noyakhali-donate-btn')
     const updateMainBalance = mainBalanceSub(noyakhaliDonation);
     const finalMainBalance = document.getElementById('main-balance').innerText = updateMainBalance;
 
-    // ! history list creat
+     // ! js for pop up button
+
+     const popUp = document.getElementById('pop-up');
+     popUp.classList.remove('hidden');
+     const popUpClose = document.getElementById('pop-up-btn');
+     popUpClose.addEventListener('click',function(){
+        popUp.classList.add('hidden');
+     })
+     
+    // ! history list create
 
     const historyItem = document.createElement('div');
     historyItem.className = 'bg-gray-300 p-4 mx-28 my-6  rounded-md border-1-2 border-gray-violet';
@@ -30,6 +39,11 @@ document.getElementById('noyakhali-donate-btn')
     `
     const historyContainer = document.getElementById('history-area');
     historyContainer.appendChild(historyItem); 
+
+
+   
+
+
    
 });
 
@@ -55,7 +69,18 @@ document.getElementById('feni-donate-btn')
     const updateMainBalance = mainBalanceSub(feniDonation);
     const finalMainBalance = document.getElementById('main-balance').innerText = updateMainBalance;
 
-    // ! history list creat
+
+    
+     // ! js for pop up button
+
+     const popUp = document.getElementById('pop-up');
+     popUp.classList.remove('hidden');
+     const popUpClose = document.getElementById('pop-up-btn');
+     popUpClose.addEventListener('click',function(){
+        popUp.classList.add('hidden');
+     })
+
+    // ! history list create
 
     const historyItem = document.createElement('div');
     historyItem.className = 'bg-gray-300 p-4 mx-28 my-6  rounded-md border-1-2 border-gray-violet';
@@ -90,7 +115,17 @@ document.getElementById('studen-donate-btn')
     const updateMainBalance = mainBalanceSub(studentDonation);
     const finalMainBalance = document.getElementById('main-balance').innerText = updateMainBalance;
 
-    // ! history list creat
+    
+     // ! js for pop up button
+
+     const popUp = document.getElementById('pop-up');
+     popUp.classList.remove('hidden');
+     const popUpClose = document.getElementById('pop-up-btn');
+     popUpClose.addEventListener('click',function(){
+        popUp.classList.add('hidden');
+     })
+
+    // ! history list create
 
     const historyItem = document.createElement('div');
     historyItem.className = 'bg-gray-300 p-4 mx-28 my-6  rounded-md border-1-2 border-gray-violet';
