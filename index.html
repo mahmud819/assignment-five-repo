@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white relative">
-    <header class="px-24 bg-zinc-100 sticky top-0 z-10">
+    <header class="px-4 bg-zinc-100 static  z-10 hidden lg:px-24 sticky top-0 ">
         <!-- <div class="nav-bar">
             <div class="btn">
                 <button>button</button>
@@ -25,7 +25,7 @@
                 <h1>something2</h1>
             </div>
         </div> -->
-        <div class="navbar pt-6">
+        <div class="navbar pt-2 lg:pt-6">
             <div class="navbar-start">
                 <a href="faq.html"><button class="btn bg-lime-500 text-black border-none w-auto h-2 py-1 hover:bg-lime-500 text-black">Blog</button></a>
             </div>
@@ -41,7 +41,7 @@
 
           <!--! button area html -->
 
-          <div class="button-area flex justify-center my-10 pb-6">
+          <div class="button-area flex justify-center my-4 pb-6 lg:my-10">
             <button id="donation-btn" class="btn bg-lime-500 text-black border-none hover:bg-lime-500 text-black" type="button">Donation</button>
             <button id="history-btn" class="btn bg-white text-black border-none ml-4 hover:bg-lime-500 text-black" >History</button>
         </div>
@@ -52,14 +52,14 @@
       <div id="camphain-area" class="camphain-area">
         <!-- ! Noyakhali area html -->
 
-        <div class="hero bg-white py-8 px-24">
+        <div class="hero bg-white py-4 px-4 lg:py-8 lg:px-24">
             <div class="hero-content p-0 flex-col lg:flex-row">
-              <div class="img-div w-1/2 h-auto">
+              <div class="img-div w-full lg:w-1/2 h-auto">
                 <img
                 src= "assets/noakhali.png"
                 class="rounded-lg w-full h-full" />
               </div> 
-              <div class="ml-2 w-1/2">
+              <div class="ml-2 w-full lg:w-1/2">
                 <button  class="flex btn bg-gray-300 text-black border-none mb-2 hover:text-white">
                     <img src="./assets/coin.png" alt="">
                     <h1 class=""><span id="noyakhali-balance-field">1000</span> BDT</h1>
@@ -76,14 +76,14 @@
 
           <!-- ! Feni area html -->
 
-          <div class="hero my-0 py-8 bg-white  px-24">
+          <div class="hero my-0 bg-white py-4 px-4 lg:py-8 lg:px-24">
             <div class="hero-content p-0 flex-col lg:flex-row">
-              <div class="img-div w-1/2 h-auto">
+              <div class="img-div w-full lg:w-1/2 h-auto">
                 <img
                 src= "assets/feni.png"
                 class="rounded-lg w-full h-full" />
               </div> 
-              <div class="ml-2 w-1/2">
+              <div class="ml-2 w-full lg:w-1/2">
                 <button class="flex btn bg-gray-300 text-black border-none mb-2 hover:text-white">
                     <img src="./assets/coin.png" alt="">
                     <h1><span id="feni-balance-field">1000</span>BDT</h1>
@@ -100,14 +100,14 @@
 
           <!-- ! student protest html -->
 
-          <div class="hero  pt-8 pb-20 bg-white  px-24">
+          <div class="hero  pt-8 pb-20 bg-white  py-4 px-4 lg:py-8 lg:px-24">
             <div class="hero-content p-0 flex-col lg:flex-row">
-              <div class="img-div w-1/2 h-auto">
+              <div class="img-div w-full lg:w-1/2 h-auto">
                 <img
                 src= "assets/quota-protest.png"
                 class="rounded-lg w-full h-full" />
               </div> 
-              <div class="ml-2 w-1/2">
+              <div class="ml-2 w-full lg:w-1/2">
                 <button class="flex btn bg-gray-300 text-black border-none mb-2 hover:text-white">
                     <img src="./assets/coin.png" alt="">
                     <h1><span id="student-balance-field">1000</span>BDT</h1>
