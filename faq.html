@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment five</title>
+    <!--! talwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- !daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+
+    <header class="px-24 bg-zinc-100 sticky top-0 z-10">
+        <div class="navbar pt-6">
+            <div class="navbar-start">
+                <a href="./index.html"><button id="faq"  class="btn bg-lime-500 text-black border-none w-auto h-2 py-1 hover:bg-lime-500 text-black">Home</button></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <img src="./assets/logo.png" alt="">
+              <h1 class="text-black">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <img src="./assets/coin.png" alt="">
+                <h1 class="text-black"> <span id="main-balance">10000</span>BDT</h1>
+            </div>
+          </div>
+    </header>
+
+
+    <main class="bg-white px-24 text-black">
+       <div class="faq pt-16  ">
+        <h1 class="text-4xl ml-4 font-bold mb-4">Important FAQ</h1>
+         <div class="collapse collapse-arrow bg-white">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the document object model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-white">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>Using getElementById: The getElementById method allows you to select an element by its ID. ...
+                Using getElementsByClassName: ...
+                Using getElementsByTagName: ...
+                Using querySelector: ...
+                Using querySelectorAll: ...
+                Changing the Text Content. ...
+                Changing the HTML Content. ...
+                Changing the Attribute Value.</p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-white">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-white">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.De</p>
+            </div>
+          </div>
+            
+
+          </div>
+        
+
+    
+
+          <!-- ! js files add -->
+           <script src="app.js"></script>
+           <script src="utilities.js"></script>
+    </main>
+</body>
+</html>
