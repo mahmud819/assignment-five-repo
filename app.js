@@ -17,13 +17,21 @@ document.getElementById('noyakhali-donate-btn')
    
 // ! section balance reduce from main balance calculation
 
-    const updateMainBalance = mainBalanceSub(finalNoyakhaliBalance);
+    const updateMainBalance = mainBalanceSub(noyakhaliDonation);
     const finalMainBalance = document.getElementById('main-balance').innerText = updateMainBalance;
 
-   console.log(finalMainBalance);
+    // ! history list creat
+
+    const historyItem = document.createElement('div');
+    historyItem.className = 'bg-gray-300 p-4 mx-28 my-6  rounded-md border-1-2 border-gray-violet';
+    historyItem.innerHTML = `
+    <p class= 'text-3xl text-black'>${noyakhaliDonation + ' ' + 'is donated for flood at Noyakhali,Bangladesh'}</p>
+    <p class= 'text-3xl text-black'>${new Date().toLocaleDateString()}</p>
+    `
+    const historyContainer = document.getElementById('history-area');
+    historyContainer.appendChild(historyItem); 
+   
 });
-
-
 
 
 // ! js code for feni  section
@@ -44,12 +52,21 @@ document.getElementById('feni-donate-btn')
    
 // ! section balance reduce from main balance calculation
 
-    const updateMainBalance = mainBalanceSub(finalFeniBalance);
+    const updateMainBalance = mainBalanceSub(feniDonation);
     const finalMainBalance = document.getElementById('main-balance').innerText = updateMainBalance;
 
-   console.log(finalMainBalance);
-});
+    // ! history list creat
 
+    const historyItem = document.createElement('div');
+    historyItem.className = 'bg-gray-300 p-4 mx-28 my-6  rounded-md border-1-2 border-gray-violet';
+    historyItem.innerHTML = `
+    <p class= 'text-3xl text-black'>${feniDonation + ' ' + 'is donated for flood at Feni,Bangladesh'}</p>
+    <p class= 'text-3xl text-black'>${new Date().toLocaleDateString()}</p>
+    `
+    const historyContainer = document.getElementById('history-area');
+    historyContainer.appendChild(historyItem); 
+   
+});
 
 
 //  ! js code for student protest
@@ -70,8 +87,41 @@ document.getElementById('studen-donate-btn')
    
 // ! section balance reduce from main balance calculation
 
-    const updateMainBalance = mainBalanceSub(finalStudentBalance);
+    const updateMainBalance = mainBalanceSub(studentDonation);
     const finalMainBalance = document.getElementById('main-balance').innerText = updateMainBalance;
 
-   console.log(finalMainBalance);
+    // ! history list creat
+
+    const historyItem = document.createElement('div');
+    historyItem.className = 'bg-gray-300 p-4 mx-28 my-6  rounded-md border-1-2 border-gray-violet';
+    historyItem.innerHTML = `
+    <p class= 'text-3xl text-black'>${studentDonation + ' ' + 'is donated for students protest injury,Bangladesh'}</p>
+    <p class= 'text-3xl text-black'>${new Date().toLocaleDateString()}</p>
+    `
+    const historyContainer = document.getElementById('history-area');
+    historyContainer.appendChild(historyItem); 
+   
 });
+
+
+//  ! tab change function
+
+const donationTab = document.getElementById('donation-btn');
+const historyTab = document.getElementById('history-btn');
+historyTab.addEventListener('click',function(){
+    historyTab.classList.add('bg-lime-500');
+    historyTab.classList.remove('bg-white');
+    donationTab.classList.add('bg-white','text-black');
+    donationTab.classList.remove('bg-lime-500');
+    document.getElementById('camphain-area').classList.add('hidden');
+    document.getElementById('history-area').classList.remove('hidden');
+})
+
+donationTab.addEventListener('click',function(){
+    historyTab.classList.add('bg-white');
+    historyTab.classList.remove('bg-lime-500');
+    donationTab.classList.add('bg-lime-500');
+    donationTab.classList.remove('bg-white');
+    document.getElementById('camphain-area').classList.remove('hidden');
+    document.getElementById('history-area').classList.add('hidden');
+})
